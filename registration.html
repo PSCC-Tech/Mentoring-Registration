@@ -31,7 +31,7 @@
   <div class="container mt-2"> <!-- Container to center the form on the page -->
     <div class="row justify-content-center"> <!-- Center the form row -->
       <div class="col-md-5"> <!-- Adjust the size of the form -->
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" action="submit.php" method="POST" novalidate>
           <br>
           <div class="p-4 bg-warning-subtle bg-opacity-10 border border-warning border-start-1 rounded-end text-center">
             <label for="Nombre" class="form-label"> <b> Nombre y Apellidos</b> </label>
@@ -110,7 +110,7 @@
             <input type="datetime-local" id="DiaHora" name="DiaHora">
           </div>
           <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="submit" class="btn btn-primary btn-lg" onclick="WriteToFile(this.form)">Completar</button>
+            <button type="submit" class="btn btn-primary btn-lg">Completar</button>
           </div>
           <br>
       </div>
@@ -119,4 +119,5 @@
   </div>
   </div>
 </body>
+
 </html>
